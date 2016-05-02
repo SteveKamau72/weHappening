@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.snapttechtechnologies.stevekamau.wehappening" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".app.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/MyMaterialTheme"
+        tools:replace="android:icon" >
+        <activity
+            android:name=".activities.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.AddEvent"
+            android:label="@string/title_activity_add_event" />
+        <activity
+            android:name=".activities.MyProfile"
+            android:label="@string/title_activity_edit_profile" />
+        <activity
+            android:name=".activities.Detail"
+            android:label="@string/title_activity_detail" />
+        <activity
+            android:name=".activities.EditProfile"
+            android:label="@string/title_activity_edit_profile2" />
+        <activity
+            android:name=".activities.LocationActivity"
+            android:label="@string/title_activity_location" />
+        <activity
+            android:name=".activities.FindLocationActivity"
+            android:label="@string/title_activity_find_location" />
+        <activity
+            android:name=".activities.EventPlannersQ1"
+            android:label="@string/title_activity_event_planners_q1" />
+
+        <service android:name=".helper.ScheduleService" />
+        <service android:name=".helper.NotifyService" />
+
+        <activity
+            android:name=".activities.AttendOrNot"
+            android:label="@string/title_activity_attend_or_not" >
+        </activity>
+        <activity
+            android:name=".activities.NightModeActivity"
+            android:label="@string/title_activity_night_mode" >
+        </activity>
+    </application>
+
+</manifest>

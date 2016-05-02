@@ -1,0 +1,39 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "com.snapttechtechnologies.stevekamau.wehappening"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.1"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:23.0.1'
+    compile 'com.android.support:design:23.0.1'
+    compile 'com.android.support:recyclerview-v7:23.0.1'
+    compile 'com.android.support:cardview-v7:23.0.1'
+    compile 'com.pkmmte.view:circularimageview:1.1'
+    compile files('libs/volley.jar')
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.melnykov:floatingactionbutton:1.0.7'
+    compile 'com.github.ksoichiro:android-observablescrollview:1.6.0'//view animation-details
+    compile 'com.github.rahatarmanahmed:circularprogressview:2.4.0'//cicular progress
+    compile 'com.flyco.dialog:FlycoDialog_Lib:1.1.0@aar'//optios view in attending list
+    compile 'com.flyco.animation:FlycoAnimation_Lib:1.0.0@aar'//optios view in attending list
+    compile 'cn.pedant.sweetalert:library:1.3'//alert dialogs with animation
+    compile 'com.eftimoff:androidplayer:1.0.3@aar'//attending empty texts and views animation
+
+}

@@ -1,0 +1,207 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="160dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/nightlife" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#80424242"
+                    android:gravity="bottom"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:shadowColor="#000"
+                    android:shadowRadius="2"
+                    android:text="Parties"
+                    android:textColor="#fff"
+                    android:textSize="22dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout2"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_below="@+id/layout1">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_below="@+id/view1"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_weight="1"
+                        android:paddingRight="1dp"
+                        android:paddingTop="1dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/arts" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#66ff80ab"
+                            android:gravity="bottom"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="15dp"
+                            android:shadowColor="#000"
+                            android:shadowRadius="2"
+                            android:text="Arts"
+                            android:textColor="#fff"
+                            android:textSize="22dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_weight="1"
+                        android:paddingTop="1dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/classes" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#6690caf9"
+                            android:gravity="bottom"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="15dp"
+                            android:shadowColor="#000"
+                            android:shadowRadius="2"
+                            android:text="Classes"
+                            android:textColor="#fff"
+                            android:textSize="22dp" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout3"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:paddingTop="1dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/music" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#804db6ac"
+                    android:gravity="bottom"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:shadowColor="#000"
+                    android:shadowRadius="2"
+                    android:text="Music"
+                    android:textColor="#fff"
+                    android:textSize="22dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout4"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_below="@+id/layout1">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_below="@+id/view1"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_weight="1"
+                        android:paddingRight="1dp"
+                        android:paddingTop="1dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/networking" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#66ea80fc"
+                            android:gravity="bottom"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="15dp"
+                            android:shadowColor="#000"
+                            android:shadowRadius="2"
+                            android:text="Networking"
+                            android:textColor="#fff"
+                            android:textSize="22dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="280dp"
+                        android:layout_height="130dp"
+                        android:layout_weight="1"
+                        android:paddingTop="1dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/sports" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#8081c784"
+                            android:gravity="bottom"
+                            android:scaleType="centerCrop"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="15dp"
+                            android:shadowColor="#000"
+                            android:shadowRadius="2"
+                            android:text="Sports"
+                            android:textColor="#fff"
+                            android:textSize="22dp" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
